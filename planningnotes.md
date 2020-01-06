@@ -30,8 +30,10 @@ Both:
 - different weapons change aspects of battle (hit chance, number of hits, etc.)
 
 Decisions:
-- battle backgrounds
+- battle backgrounds (not top priority)
 - PSI attacks (lifeup, fire, thunder) (can miss)
 - items heal exact amounts of HP
-- Bash uses Undertale timing meter
 - simple sprites
+- game will be three fights of increasing difficulty with a path before (think of an early release demo)
+- first enemy: foppy
+- second enemy: c r a b 
