@@ -9,6 +9,7 @@ EarthBound:
 - party members (Ness, Paula, Jeff, and Poo)
 - speed is important to determine turn order (remember Ness is pretty slow)
 - Battle backgrounds (and lots of colors)!
+- many many stats (AT, DF, PP, IQ, Guts, Vitality)
 
 Undertale: 
 - lots of motion
@@ -20,10 +21,13 @@ Undertale:
 - not as based on chance as EarthBound 
 - speed not important (player always takes action first)
 - dark background with black/white sprites (with some colored attacks)
+- simple stats (AT, DF, LV)
 
 Both:
 - options for what to do (be it Fight, Act, etc. or Bash, PSI, Goods, etc.)
 - text during battles
+- battle music
+- different weapons change aspects of battle (hit chance, number of hits, etc.)
 
 Decisions:
 - battle backgrounds
