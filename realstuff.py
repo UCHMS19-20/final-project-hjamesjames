@@ -9,6 +9,11 @@ screen = pygame.display.set_mode( (500, 500) )
 print(pygame.QUIT)
 # Main loop. Your game would go inside this loop
 while True:
+    screen.fill ( (0, 0, 0))
+    # Create a font object
+    font = pygame.font.SysFont("Arial", 50)
+    # Create text using the font
+    text = font.render("Hello", True, (255,250,255))
     # do something for each event in the event queue (list of things that happen)
     for event in pygame.event.get():
 

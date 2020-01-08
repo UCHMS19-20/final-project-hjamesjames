@@ -12,4 +12,4 @@ basic events have been incorporated, now make them do stuff
 work on graphics next to be able to move it around
 - object!! 
 
-work from home bc you already have the setup
+work from home bc you will have the setup
