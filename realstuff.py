@@ -4,6 +4,8 @@ import pygame
 # Initialize pygame so it runs in the background and manages things
 pygame.init()
 
+def class Main:
+    __init__
 # Create a display. Size must be a tuple, which is why it's in parentheses
 screen = pygame.display.set_mode( (500, 500) )
 print(pygame.QUIT)

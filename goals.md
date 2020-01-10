@@ -13,3 +13,5 @@ work on graphics next to be able to move it around
 - object!! 
 
 work from home bc you will have the setup
+
+learn/relearn some things
