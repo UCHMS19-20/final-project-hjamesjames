@@ -48,3 +48,8 @@ Date  | Checkpoint
 
 * [Documentation](documentation.md)
 * [Resources](resources.md)
+
+## Notable events
+
+* 1/14/2020:
+    ** discussed a change in my project to no longer include graphics and instead focus more on the internal logic of the game.
