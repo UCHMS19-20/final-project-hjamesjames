@@ -35,18 +35,62 @@ def participate():
   
 def ANXIETY():
   '''anxiety fight'''
+  zozo = input("What now? a) Bash b) Run   ")
+  if zozo == "a":
+      print("good job, facing your fears was the right answer!")
+      threefour()
+  elif zozo == "b":
+      print("you run away, making a screeching sound as you do so. This does nothing to help you at all and you fail.")
+      sys.exit()
 
 def threefour():
   '''second class of the day, after anxiety fight'''
+  thfo = input("next class. do you a) prepare for midterms? or b) look at memes?  ")
+  if thfo == "a":
+      print("you feel stressed, but this is better in the long run.")
+      Luck == True
+  elif thfo == "b":
+      print("you feel more relaxed, but this could be detrimental in the long run.  ")
+      Luck == False  
 
 def Lunch():
   '''after 3/4. only a choice if Luck is True'''
+  if Luck == True:
+      lun = input("you can a) eat your lunch or b) wander around. what do you do?  ")
+      if lun == "a":
+          print("your hunger is sated.")
+          Spanish()
+      elif lun =="b":
+          Harsh()
+      else:
+          lun = input("please choose a or b.  ")
+  elif Luck == False:
+      print("you already ate your lunch, so you wander around.")
+      Harsh()
 
 def Harsh():
   '''Hard to define, but here, he offers you a choice.'''
+  epic = input("you run into Harsh, who has hacked the game and offers you a choice: a) skip to the final boss or b) be academically honest.  ")
+  if epic == "a":
+      print("Harsh pushes some buttons and sends you to the final boss. Get ready!!")
+      Sans()
+  elif epic == "b":
+      print("Harsh respects your decision, but is secretly disappointed in you. You die of shame.")
+      sys.exit()
+  else:
+      epic = input("please choose a or b.  ")
 
 def Spanish():
   '''choice after going to lunch.'''
+  esp = input("spanish class. do you speak a) english or b) spanish this period?  ")
+  if esp == "a":
+      print("being monolingual? that's kinda cringe. try again.")
+      sys.exit()
+  elif esp == "b":
+      print("muy bien, you make it through spanish class.")
+      Sans()
+  else:
+      esp = input("please choose a or b.  ")
 
 def intimidate():
   '''choice one of the final fight''' 
@@ -57,5 +101,13 @@ def popquiz():
 def Sans():
   '''the final boss fight.'''
   print("You hear a familiar voice. Megalovania begins to play... Mr. Sans(ervino) appears!")
+  print("Mr. Sans stands menacingly before you... What now?")
+  ddda = input("a) stand your ground. b) beg for a good grade c) up up down down left right left right b a b a start.  ")
+  if ddda == "a":
+      print("you t pose on the final boss. are you lucky enough for it to work?")
+      if Luck == True:
+          print("Mr. Sans recognizes what you are trying to do. it does not work, but he respects you enough to let you pass. You win!")
+          
+  
 
-auditorium()
+#NTS return your functions before you wonder why they don't work
