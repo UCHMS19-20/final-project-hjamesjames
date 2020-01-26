@@ -10,19 +10,16 @@ def auditorium():
     sys.exit()
   elif aud.lower() == "b":
     class1()
-  else:
-    aud = input("please choose a or b.")
 
 def class1():
   '''second choice after leaving auditorium'''
   onetwo = input("Now that you're up, do you go to class? a) nope b) of course!  ")
   if onetwo.lower() == "a":
     print("how did you even get into this school?")
-    sys.exit
+    sys.exit()
   elif onetwo.lower() == "b":
     participate()
-  else:
-    onetwo = input ("please choose a or b")
+
 
 def participate():
   '''choice while in class1'''
@@ -35,7 +32,8 @@ def participate():
   
 def ANXIETY():
   '''anxiety fight'''
-  zozo = input("What now? a) Bash b) Run   ")
+  print("You hear tense battle music from somebody's headphones. ANXIETY appears!")
+  zozo = input("What do you do? a) FIGHT! b) aaa run!")
   if zozo == "a":
       print("good job, facing your fears was the right answer!")
       threefour()
@@ -45,11 +43,12 @@ def ANXIETY():
 
 def threefour():
   '''second class of the day, after anxiety fight'''
-  thfo = input("next class. do you a) prepare for midterms? or b) look at memes?  ")
-  if thfo == "a":
+  Luck = False
+  class2 = input("next class. do you a) prepare for midterms? or b) look at memes?  ")
+  if class2 == "a":
       print("you feel stressed, but this is better in the long run.")
       Luck == True
-  elif thfo == "b":
+  elif class2 == "b":
       print("you feel more relaxed, but this could be detrimental in the long run.  ")
       Luck == False  
 
@@ -62,8 +61,6 @@ def Lunch():
           Spanish()
       elif lun =="b":
           Harsh()
-      else:
-          lun = input("please choose a or b.  ")
   elif Luck == False:
       print("you already ate your lunch, so you wander around.")
       Harsh()
@@ -77,8 +74,6 @@ def Harsh():
   elif epic == "b":
       print("Harsh respects your decision, but is secretly disappointed in you. You die of shame.")
       sys.exit()
-  else:
-      epic = input("please choose a or b.  ")
 
 def Spanish():
   '''choice after going to lunch.'''
@@ -109,5 +104,5 @@ def Sans():
           print("Mr. Sans recognizes what you are trying to do. it does not work, but he respects you enough to let you pass. You win!")
           
   
-
+auditorium()
 #NTS return your functions before you wonder why they don't work
