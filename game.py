@@ -1,4 +1,5 @@
 import sys
+
 #introduction message
 print("Welcome to your new favorite game, the 100 percent accurate Magnet Simulator. We'll start in the Magnet building.")
 
@@ -9,8 +10,6 @@ def auditorium():
   if aud.lower() == "a":
     print("you foolish fool. you fall back to sleep, and Bruce sees and puts a pillow behind your head, but he also locks you in and you can't make it to class.")
     sys.exit()
-  elif aud.lower() == "b":
-    class1()
   return aud
 
 def class1():
@@ -21,28 +20,15 @@ def class1():
     print("how did you even get into this school?")
     sys.exit()
   elif onetwo.lower() == "b":
-    participate()
-  return onetwo
-
-
-def participate():
-  '''choice while in class1'''
-  print("Will you participate in class?")
-  part = input("a) no thanks b) sure  ")
-  if part.lower == "a":
-    print("you vibe for a while, but the teacher calls on you anyway. have fun with what comes next.")
-  elif part.lower == "b":
-    print("good for you, but have fun with what comes next.")
-  ANXIETY()
-  return part
+    print("Smart, this isn't called 'Magnet Simulator' for nothing.")
+    return onetwo
   
 def ANXIETY():
   '''anxiety fight'''
-  print("You hear tense battle music from somebody's headphones. ANXIETY appears!")
+  print("Your teacher calls on you while in class. You hear tense battle music from somebody's headphones. ANXIETY appears!")
   zozo = input("What do you do? a) FIGHT! b) aaa run!  ")
   if zozo == "a":
       print("good job, facing your fears was the right answer!")
-      threefour()
   elif zozo == "b":
       print("you run away, making a screeching sound as you do so. This does nothing to help you at all and you fail.")
       sys.exit()
@@ -50,35 +36,36 @@ def ANXIETY():
 
 def threefour():
   '''second class of the day, after anxiety fight'''
-  Luck = False
+  Luck = True
   class2 = input("next class. do you a) prepare for midterms? or b) look at memes?  ")
   if class2 == "a":
       print("you feel stressed, but this is better in the long run.")
       Luck == True
       Lunch()
+      return Luck
   elif class2 == "b":
       print("you feel more relaxed, but this could be detrimental in the long run.  ")
       Luck == False
       Harsh()  
-  return Luck
-
+      return Luck
+#still an issue between these two functions, need to fix
 def Lunch():
   '''after 3/4. only a choice if Luck is True'''
   if threefour == True:
-      lun = input("you can a) eat your lunch or b) wander around. what do you do?  ")
-      if lun == "a":
-          print("your hunger is sated.")
-          Spanish()
-      elif lun =="b":
-          Harsh()
+      almuerzo = input("you can a) eat your lunch or b) wander around. what do you do?  ")
+      if almuerzo == "a":
+        print("your hunger is sated.")
+        Spanish()
+        return almuerzo
+      elif almuerzo =="b":
+        Harsh()
+        return almuerzo
   elif threefour == False:
-      print("you already ate your lunch, so you wander around.")
       Harsh()
-  return lun
 
 def Harsh():
   '''Hard to define, but here, he offers you a choice.'''
-  epic = input("you run into Harsh, who has hacked the game and offers you a choice: a) skip to the final boss or b) be academically honest.  ")
+  epic = input("You decide to wander around for lunch and you run into Harsh, who has hacked the game and offers you a choice: a) skip to the final boss or b) be academically honest.  ")
   if epic == "a":
       print("Harsh pushes some buttons and sends you to the final boss. Get ready!!")
       Sans()
@@ -137,3 +124,7 @@ def Sans():
       print("You win? You have achieved the rank: Harsh-level Hacker")
   
 auditorium()
+class1()
+ANXIETY()
+threefour()
+Lunch()
