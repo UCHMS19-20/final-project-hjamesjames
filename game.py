@@ -41,14 +41,22 @@ def threefour():
   if class2 == "a":
       print("you feel stressed, but this is better in the long run.")
       Luck == True
-      Lunch()
+      print("Your 3/4 class is over. What now? You can:")
+      #the following is a replacement for the Lunch function which caused me great pain.
+      fivesix = input("a) Eat lunch or b) Wander around and see what happens   ")
+      if fivesix.lower == "a":
+        print("Your hunger has been sated and you have gained meaningless concentration points.")
+        Spanish()
+      elif fivesix.lower == "b":
+        Harsh()
       return Luck
   elif class2 == "b":
       print("you feel more relaxed, but this could be detrimental in the long run.  ")
       Luck == False
       Harsh()  
       return Luck
-#still an issue between these two functions, need to fix
+
+"""
 def Lunch():
   '''after 3/4. only a choice if Luck is True'''
   if threefour == True:
@@ -62,9 +70,12 @@ def Lunch():
         return almuerzo
   elif threefour == False:
       Harsh()
+The above is a function that did not work in my code, but i include it
+as a comment to provide information on what the replacement variable
+"fivesix" is supposed to be in charge of."""
 
 def Harsh():
-  '''Hard to define, but here, he offers you a choice.'''
+  '''Hard to define him, but here, he offers you a choice.'''
   epic = input("You decide to wander around for lunch and you run into Harsh, who has hacked the game and offers you a choice: a) skip to the final boss or b) be academically honest.  ")
   if epic == "a":
       print("Harsh pushes some buttons and sends you to the final boss. Get ready!!")
@@ -122,9 +133,12 @@ def Sans():
     if konami.lower == "a":
       print("Correct. You get 30 lives and $69, both of which are irrelevant in this game.")
       print("You win? You have achieved the rank: Harsh-level Hacker")
-  
+ 
 auditorium()
 class1()
 ANXIETY()
 threefour()
-Lunch()
+
+#features unable to be implemented:
+#     choice restrictions (if player is to type other than a or b it
+# does not work.)
